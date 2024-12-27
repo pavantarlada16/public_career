@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+.navbar
+    {
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(15, 182, 163);
+        color: white;
+    }
+li{
+    list-style-type: none;
+    }
+.list1 li{
+    display: inline-block;
+    margin-left: 20px;
+    }
+a{
+    padding: 10px;
+    text-decoration: none;
+}
+.box a{
+    color: black;
+}
+li a{
+    color: aliceblue;
+}
+.list2 li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 5px;
+}
+.card{
+    margin: 10px;
+    width: 250px;
+    /* border: 0.25px solid grey; */
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgb(166, 221, 236);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    place-items: center;
+}
+.card:hover{
+    box-shadow: 1px 1px 20px;
+}
+.home {
+    font-size: 40px;
+    width: 1400px;
+    margin: auto;
+}
+h1{
+    color: rgb(45, 142, 119);
+    text-decoration: underline;
+}
+input{
+    width: 400px;
+    height: 35px;
+    border-radius: 10px;
+    border-color: black;
+    padding: 1px 10px 1px 10px;
+}
+input[type="submit"]{
+    width: 100px;
+    background-color: rgb(15, 182, 163);
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.form1{
+    width: 450px;
+    /* height: 368px; */
+    border: 2px solid black;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+}
+.form2{
+    width: 450px;
+    /* height: 630px; */
+    border: 2px solid black;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+}
+.form3{
+    width: 450px;
+    /* height: 700px; */
+    border: 2px solid black;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+}
+.form4{
+    width: 450px;
+    /* height: 655px; */
+    border: 2px solid black;
+    /* text-align: center; */
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+.box a:hover{
+    background-color: rgb(166, 221, 236);
+    color: black;
+    border-radius: 15px;
+}
+a:hover{
+    background-color: rgb(126, 198, 195);
+    border-radius: 5px;
+    color: black;
+    box-shadow: 1px 1px 10px rgb(166, 221, 236);
+}
+textarea{
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px
+}

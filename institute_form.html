@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="leftitem">
+            <ul class="list1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+        </div>
+        <div class="rightitem">
+            <ul class="list2">
+                <li><a href="user_form.html">User Registration</a></li>
+                <li><a href="institute_form.html">Institute Registration</a></li>
+            </ul>
+        </div>
+    </div><br>
+    <div class="form3">
+    <form action="institute_reg.jsp" method="post">
+            <h1>Registration</h1>
+            <label for="">College ID</label>
+            <br>
+            <input type="text" name="cid" id="cid">
+            <br><br>
+            <label for="">College Name</label>
+            <br>
+            <input type="text" name="cname" id="cname">
+            <br><br>
+            <label for="">Password</label>
+            <br>
+            <input type="password" name="cpwd" id="cpwd">
+            <br><br>
+            <label for="">College Address</label>
+            <br>
+            <input type="text" name="caddress" id="caddress">
+            <br><br>
+            <label for="">Established</label>
+            <br>
+            <input type="number" name="estb" id="estb">
+            <br><br>
+            <label for="">Contact Person</label>
+            <br>
+            <input type="text" id="person" name="person">
+            <br><br>
+            <label for="">Contact Number</label>
+            <br>
+            <input type="tel" pattern="[0-9]{10}" name="cphone" id="cphone">
+            <br><br>
+            <label for="">Mail Id</label>
+            <br>
+            <input type="email" name="cmail" id="cmail">
+            <br><br>
+            <label for="">Description</label>
+            <br>
+            <input type="text" name="description" id="description">
+            <br><br>
+            <input type="submit" name="submit">
+            
+        </form>
+
+        
+    </div>
+</body>
+</html>

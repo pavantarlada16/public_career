@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="leftitem">
+            <ul class="list1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+        </div>
+        <div class="rightitem">
+            <ul class="list2">
+                <li><a href="user_form.html">Registration</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div><br><br>
+    <div class="form1">
+        <form action="login.jsp" method="post">
+            <h1>Login</h1>
+            UserName<br><input type="mail" placeholder="Enter your Email" name="uname" required><br><br>
+            Password<br><input type="password" placeholder="Enter your password" name="upassword" required><br><br>
+            Authentication Type<br><input type="text" placeholder="Eg: Student, Institute, Admin" name="atype" required><br><br><br>
+            <input type="submit" name="login" value="Login"><br><br>
+        </form>
+    </div>
+</body>
+</html>
+
+
+<!-- Using Session Scope -- this is to use carry value for the next page in jsp
+
+<%
+    String myValue = (String) request.getAttribute("myValue");
+%>
+<p>Value: <%= myValue %></p> -->
