@@ -1,0 +1,71 @@
+#MySQL tables:
+tables to create 
+1. user_register -->
+(register users detailes are stored here)
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| id       | bigint       | NO   |     | NULL    |       |
+| fullname | varchar(255) | NO   |     | NULL    |       |
+| password | varchar(255) | NO   |     | NULL    |       |
+| age      | int          | NO   |     | NULL    |       |
+| gender   | varchar(255) | NO   |     | NULL    |       |
+| address  | varchar(255) | NO   |     | NULL    |       |
+| phone    | bigint       | NO   |     | NULL    |       |
+| mail     | varchar(255) | NO   |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+
+2. institute_register
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| cid       | bigint       | NO   |     | NULL    |       |
+| cname     | varchar(255) | NO   |     | NULL    |       |
+| cpassword | varchar(255) | NO   |     | NULL    |       |
+| caddress  | varchar(255) | NO   |     | NULL    |       |
+| estbyear  | int          | NO   |     | NULL    |       |
+| cpname    | varchar(255) | YES  |     | NULL    |       |
+| cpnumber  | bigint       | NO   |     | NULL    |       |
+| cdescrip  | varchar(255) | NO   |     | NULL    |       |
+| email     | varchar(255) | NO   |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+
+3. request_user
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| collegeid | int          | NO   |     | NULL    |       |
+| sname     | varchar(255) | NO   |     | NULL    |       |
+| dob       | date         | NO   |     | NULL    |       |
+| mail      | varchar(255) | NO   |     | NULL    |       |
+| city      | varchar(255) | NO   |     | NULL    |       |
+| tencgp    | varchar(50)  | NO   |     | NULL    |       |
+| icgp      | varchar(50)  | NO   |     | NULL    |       |
+| acdyear   | varchar(200) | NO   |     | NULL    |       |
+| branch    | varchar(255) | NO   |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+
+4. courses
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| cid        | int          | NO   |     | NULL    |       |
+| coursename | varchar(255) | NO   |     | NULL    |       |
+| department | varchar(255) | NO   |     | NULL    |       |
+| affiliated | varchar(255) | NO   |     | NULL    |       |
+| placements | varchar(255) | NO   |     | NULL    |       |
+| duration   | int          | NO   |     | NULL    |       |
+| fees       | int          | NO   |     | NULL    |       |
+| clgname    | varchar(255) | NO   |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+
+5. messages
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| cid         | int          | NO   |     | NULL    |       |
+| uid         | varchar(255) | NO   |     | NULL    |       |
+| branch      | varchar(255) | NO   |     | NULL    |       |
+| description | varchar(500) | NO   |     | NULL    |       |
+| cname       | varchar(255) | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
