@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <% String id=request.getParameter("cid"); %>
-<% String name=(String)session.getAttribute("name");
+<% String branch=request.getParameter("branch"); %>
+<% String uid=(String)session.getAttribute("id");
+String name=(String)session.getAttribute("name");
 if(name==null){
     response.sendRedirect("error_page.jsp");
 } else { %>
@@ -48,7 +50,7 @@ if(name==null){
         Date of Birth<br>
         <input type="date" name="date" required><br><br>
         Email ID<br>
-        <input type="mail" name="umail" required><br><br>
+        <input type="mail" name="umail" value="<%= uid %>" required><br><br>
         City<br>
         <input type="text" name="city" required><br><br>
         10th CGPA<br>
@@ -57,6 +59,8 @@ if(name==null){
         <input type="text" name="inter" required><br><br>
         Requested Acedemic year<br>
         <input type="text" name="acedimic" required><br><br>
+        Requested Branch<br>
+        <input type="text" name="branch" value="<%= branch %>" required><br><br>
         <input type="submit" value="Send"><br><br>
     </form>
     </div>

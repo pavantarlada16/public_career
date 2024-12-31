@@ -32,13 +32,14 @@ if(id==null){
     <br><br>
     <div>
         <h2 align="center">Messages Sent</h2>
-        <table width="700px" align="center">
+        <table width="900px" align="center">
             <tr style="color:#f4511e; font-size: 18px;">
                 <th>College ID</th>
                 <th>College Name</th>
                 <th>Student ID</th>
                 <th>Branch</th>
                 <th>Description</th>
+                <th>Seen</th>
                 <th>Action</th>
             </tr>
 <%@page import="java.sql.*"%>
@@ -63,7 +64,8 @@ try{
                 <td>&nbsp;<%= rs.getString(2) %>&nbsp;</td>
                 <td>&nbsp;<%= rs.getString(3) %>&nbsp;</td>
                 <td>&nbsp;<%= rs.getString(4) %>&nbsp;</td>
-                <td>&nbsp;<a href="deletemsg.jsp">Delete Message</a></td>
+                <td>&nbsp;<%= rs.getString(7) %>&nbsp;</td>
+                <td>&nbsp;<a href="deletemsg.jsp?mid=<%= rs.getString(6) %>">Delete Message</a></td>
             </tr>
         <%} while(rs.next());
     } else {

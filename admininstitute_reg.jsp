@@ -17,7 +17,7 @@
         </div>
         <div class="rightitem">
             <ul class="list2">
-                <li><a href="index.html">Logout</a></li>
+                <li><a href="logout.jsg">Logout</a></li>
             </ul>
         </div>
     </div>

@@ -43,10 +43,10 @@ try{
     description=request.getParameter("description");
     cname=request.getParameter("cid");
 
-    out.println(cid+" , "+mail+" , "+branch+" ,  "+description+" , "+cname);
+    //out.println(cid+" , "+mail+" , "+branch+" ,  "+description+" , "+cname);
 
     con=Busdo.getConnection();
-    pst=con.prepareStatement("insert into messages values(?,?,?,?,?)");
+    pst=con.prepareStatement("insert into messages (cid, uid, branch, description, cname) values(?,?,?,?,?)");
     pst.setInt(1,cid);
     pst.setString(2,mail);
     pst.setString(3,branch);

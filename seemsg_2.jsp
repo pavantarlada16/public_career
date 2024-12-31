@@ -65,7 +65,7 @@ try{
                 <td>&nbsp;<%= rs.getString(2) %>&nbsp;</td>
                 <td>&nbsp;<%= rs.getString(3) %>&nbsp;</td>
                 <td>&nbsp;<%= rs.getString(4) %>&nbsp;</td>
-                <td>&nbsp;<a href="">Seen</a></td>
+                <td>&nbsp;<a href="seen.jsp?act=<%= rs.getString(7) %>&msgid=<%= rs.getInt(6) %>">Seen</a></td>
             </tr>
         <%} while(rs.next());
     } else {

@@ -64,7 +64,7 @@ try{
                 <label>Placements : </label>&nbsp;<%=rs.getString(5)%><br>
                 <label>Duration : </label>&nbsp;<%=rs.getString(6)%> Months<br>
                 <label>Course Fee : </label>&nbsp;<%=rs.getString(7)%><br>
-                <label><a style="float: right;" href="intrest.jsp?cid=<%= rs.getInt(1) %>">Intrested</a></label>
+                <label><a style="float: right;" href="intrest.jsp?cid=<%= rs.getInt(1) %>&branch=<%=rs.getString(2)%>">Intrested</a></label>
             </div>
             <%
         } while(rs.next());
