@@ -16,6 +16,7 @@ tables to create
 +----------+--------------+------+-----+---------+-------+
 
 2. institute_register
+(registerd Institute detailes are stored here)
 +-----------+--------------+------+-----+---------+-------+
 | Field     | Type         | Null | Key | Default | Extra |
 +-----------+--------------+------+-----+---------+-------+
@@ -31,6 +32,7 @@ tables to create
 +-----------+--------------+------+-----+---------+-------+
 
 3. request_user
+(The user should request to connect with Institute through this)
 +-----------+--------------+------+-----+---------+-------+
 | Field     | Type         | Null | Key | Default | Extra |
 +-----------+--------------+------+-----+---------+-------+
@@ -46,6 +48,7 @@ tables to create
 +-----------+--------------+------+-----+---------+-------+
 
 4. courses
+(Institute should add the courses they offer)
 +------------+--------------+------+-----+---------+-------+
 | Field      | Type         | Null | Key | Default | Extra |
 +------------+--------------+------+-----+---------+-------+
@@ -60,6 +63,7 @@ tables to create
 +------------+--------------+------+-----+---------+-------+
 
 5. messages
+(the conected users should get messages form the institutes)
 +-------------+--------------+------+-----+---------+-------+
 | Field       | Type         | Null | Key | Default | Extra |
 +-------------+--------------+------+-----+---------+-------+
