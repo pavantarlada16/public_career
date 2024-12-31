@@ -1,7 +1,7 @@
 #MySQL tables:
 tables to create 
 1. user_register -->
-(register users detailes are stored here)
+(register users(students) detailes are stored here)
 +----------+--------------+------+-----+---------+-------+
 | Field    | Type         | Null | Key | Default | Extra |
 +----------+--------------+------+-----+---------+-------+
@@ -32,7 +32,7 @@ tables to create
 +-----------+--------------+------+-----+---------+-------+
 
 3. request_user
-(The user should request to connect with Institute through this)
+(The user(student) should request to connect with Institute through this)
 +-----------+--------------+------+-----+---------+-------+
 | Field     | Type         | Null | Key | Default | Extra |
 +-----------+--------------+------+-----+---------+-------+
@@ -63,13 +63,15 @@ tables to create
 +------------+--------------+------+-----+---------+-------+
 
 5. messages
-(the conected users should get messages form the institutes)
-+-------------+--------------+------+-----+---------+-------+
-| Field       | Type         | Null | Key | Default | Extra |
-+-------------+--------------+------+-----+---------+-------+
-| cid         | int          | NO   |     | NULL    |       |
-| uid         | varchar(255) | NO   |     | NULL    |       |
-| branch      | varchar(255) | NO   |     | NULL    |       |
-| description | varchar(500) | NO   |     | NULL    |       |
-| cname       | varchar(255) | NO   |     | NULL    |       |
-+-------------+--------------+------+-----+---------+-------+
+(the conected users should get messages form the institutes, those are stored here)
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| cid         | int          | NO   |     | NULL    |                |
+| uid         | varchar(255) | NO   |     | NULL    |                |
+| branch      | varchar(255) | NO   |     | NULL    |                |
+| description | varchar(500) | NO   |     | NULL    |                |
+| cname       | varchar(255) | NO   |     | NULL    |                |
+| msgid       | int          | NO   | PRI | NULL    | auto_increment |
+| seen        | varchar(20)  | YES  |     | no      |                |
++-------------+--------------+------+-----+---------+----------------+
